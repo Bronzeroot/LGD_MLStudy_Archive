@@ -1,7 +1,7 @@
 # LGD_MLStudy_Archive
 LGD ML Study 내용을 기록하고 공유합니다.
 
-#Ground Rule
+# Ground Rule
     """
     장소 : 트윈타워 동관 6층 TP Room
     시간 : 매주 화요일 목요일 11:50 ~ 12:50
