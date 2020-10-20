@@ -1,5 +1,5 @@
 # LGD_MLStudy_Archive
-Archive and share LG Display Machine Leanring Study 
+Archive and share LG Display Machine Learning Study 
 
 # Ground Rule
 
