@@ -21,11 +21,11 @@
   - Break역시 동일
   - *이중 for 문 : 안쪽 for문이 모두 실행된 후에, 밖에 for문에 카운트가 하나 올라감* 
   - 리스트 내포 (List Comprehension)  result = [num*3 for num in a]
-'''
+~~~
   result = [num *3 for num in a]
     result = []
         for num in a :
         if num&2 ==0:
             result.append(num*3)
-'''
+~~~
    
