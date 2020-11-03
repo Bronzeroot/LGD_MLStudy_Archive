@@ -20,8 +20,8 @@
   - for문에서도 continue 똑같이 사용 가능 (조건을 만족하는 경우 아래 내용 실행 없이 위로 올라가서 다시 For문을 진행시킴) 
   - Break역시 동일
   - *이중 for 문 : 안쪽 for문이 모두 실행된 후에, 밖에 for문에 카운트가 하나 올라감* 
-  - 리스트 내포 (List Comprehension)  result = [num*3 for num in a] 
-'''result = [num *3 for num in a]
+  - 리스트 내포 (List Comprehension)  result = [num*3 for num in a]
+  '''result = [num *3 for num in a]
     result = []
         for num in a :
         if num&2 ==0:
