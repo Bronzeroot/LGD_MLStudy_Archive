@@ -84,3 +84,14 @@ for line in lines()
     print(line, end="")
 f.close()
 ~~~
+통째로 읽기
+ 
+~~~python
+f = open("새파일.txt", 'r', encoding= 'UTF-8')
+data = f.read()
+print(data)
+f.close()
+~~~
+
+  - open("새파일.txt", "w" )는 새롭게 쓰게 됨
+  - open("새파일.txt", "a" )는 추가로 쓰게 됨
