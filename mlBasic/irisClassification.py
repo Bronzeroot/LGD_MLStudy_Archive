@@ -53,7 +53,7 @@ print("테스트 세트에 대한 예측값:\n{}".format(y_pred))
 print("테스트 세트의 정확도:{:.2f}".format(np.mean(y_pred == y_test)))
 print("테스트 세트의 정확도2:{:.2f}".format(knn.score(X_test,y_test)))
 
-#총 복습
+#총복습
 X_train, X_test, y_train,y_test = train_test_split(iris_dataset['data'],iris_dataset['target'],random_state=0)
 knn = KNeighborsClassifier(n_neighbors=1)
 knn.fit(X_train, y_train)
