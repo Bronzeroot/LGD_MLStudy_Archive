@@ -4,6 +4,7 @@ print()
 import cgi, os
 files = os.listdir('data')
 listStr = ''
+#'data'아래에 있는 파일을 for문을 사용해서 계속해서 가져옴
 for item in files:
   listStr = listStr + '<li><a href="index.py?id={name}">{name}</a></li>'.format(name=item)
 
