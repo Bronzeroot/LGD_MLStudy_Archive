@@ -1,12 +1,20 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3 
 print("Content-Type: text/html")
 print()
-import cgi
+import cgi, os
+files = os.listdir('data')
+listStr = ''
+for item in files:
+  listStr = listStr + '<li><a href="index.py?id={name}">{name}</a></li>'.format(name=item)
+
 form = cgi.FieldStorage()
 if 'id' in form:
     pageId = form["id"].value
+    description = open('data/'+pageId,'r').read()
+
 else:
-    pageId = 'Welcome'
+    pageId = '메인화면'
+    description = '메인을 설명하는 본문입니다'
 print('''<!doctype html>
 <html>
 <head>
@@ -14,15 +22,12 @@ print('''<!doctype html>
   <meta charset="utf-8">
 </head>
 <body>
-  <h1><a href="index.py">WEB</a></h1>
+  <h1><a href="index.py">메인화면</a></h1>
   <ol>
-    <li><a href="index.py?id=HTML">HTML</a></li>
-    <li><a href="index.py?id=CSS">CSS</a></li>
-    <li><a href="index.py?id=JavaScript">JavaScript</a></li>
+      {listStr}
   </ol>
   <h2>{title}</h2>
-  <p>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.
-  </p>
+  <p>{desc}</p>
 </body>
 </html>
-'''.format(title=pageId))
+'''.format(title=pageId, desc =description, listStr=listStr))
