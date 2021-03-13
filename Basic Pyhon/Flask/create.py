@@ -27,7 +27,7 @@ print('''<!doctype html>
       {listStr}
   </ol>
   <a href="create.py"><문의하기></a>
-  <form action "processCreate.py" method="post">
+  <form action="processCreate.py" method="post">
   <p><input type="text" name="title" placeholder="title"></p>
   <p><textarea rows="4" name="description"
   placeholder="description"></textarea></p>
