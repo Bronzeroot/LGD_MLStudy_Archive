@@ -10,9 +10,9 @@
 >    ->   PRIMARY KEY(id));
 
 * ALTER TABLE topic CHANGE creeated created datetime;
-* ALTER TABLE 테이블명 add 새로추가할필드명과 타입 after 필드이름; (새로운 필드 더하기)
+* ALTER TABLE `테이블명` add `새로추가할필드명과 타입` after `필드이름`; (새로운 필드 더하기)
 * ALTER TABLE `테이블명` DROP `컬럼명`;
-* UPDATE comment SET author_id =2 WHERE id=2;
+* UPDATE `테이블명` SET `컬러명 =` WHERE `조건`;
 
 
 # Insert & Select table
