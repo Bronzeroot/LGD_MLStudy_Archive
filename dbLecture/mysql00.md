@@ -11,8 +11,16 @@
 
 ** ALTER TABLE topic CHANGE creeated created datetime;
 
-# Insert table
+# Insert & Select table
 
 > INSERT INTO topic(title,description,creeated,author,profile) VALUES('MySQL','MySQL is ...', NOW(),'egoing','developer');
 
 > SELECT * FROM topic;
+
+> SELECT id,title,author FROM topic;
+
+> SELECT * FROM topic WHERE author='egoing';
+> SELECT * FROM topic WHERE author='egoing' ORDER BY id DESC;
+
+> SELECT * FROM topic WHERE author='egoing' ORDER BY id DESC LIMIT 2;
+> 
