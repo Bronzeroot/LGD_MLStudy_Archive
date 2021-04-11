@@ -14,4 +14,5 @@
 # Insert table
 
 > INSERT INTO topic(title,description,creeated,author,profile) VALUES('MySQL','MySQL is ...', NOW(),'egoing','developer');
+
 > SELECT * FROM topic;
