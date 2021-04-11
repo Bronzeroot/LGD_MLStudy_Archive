@@ -10,6 +10,8 @@
 >    ->   PRIMARY KEY(id));
 
 ** ALTER TABLE topic CHANGE creeated created datetime;
+** ALTER TABLE 테이블명 add 새로추가할필드명과 타입 after 필드이름; (새로운 필드 더하기)
+
 
 # Insert & Select table
 
