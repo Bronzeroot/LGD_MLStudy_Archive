@@ -8,6 +8,8 @@
  - 스키마는 관련 Data Table을 저장하는 Directory와 비슷한 개념
  - 여러 스키마가 모여있는 것이 DB Server이다
 
-1. Oracle 
+1. Oracle (생성하기 / 시작하기)
  - User를 생성하면 사용자 별 Schema를 사용하게 됨
+ - cmd - sqlplus - sys as SYSDBA - CREATE USER '''' IDENTIFIED BY '''';
+ - GRANT DBA TO '''' ;
  - 
